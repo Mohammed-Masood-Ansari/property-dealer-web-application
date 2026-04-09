@@ -25,6 +25,8 @@ public class AdminController {
 
     @Autowired
     private AdminService adminService;
+    
+    @Autowired  // ✅ ADD THIS - was missing!
     private BookingRepository bookingRepo;
     
     // 🔐 CREATE ADMIN (TEMP / SUPER ADMIN ONLY)
