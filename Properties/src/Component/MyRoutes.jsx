@@ -4,6 +4,7 @@ import AdminContacts from "./AdminContacts";
 import AdminLayout from "./AdminLayout";
 import AdminRoute from "./AdminRoute";
 import AdminLogin from "./Auth/AdminLogin";
+import AdminRegistration from "./Auth/AdminRegistration";
 import Login from "./Auth/Login";
 import Bookings from "./Bookings";
 import Layout from "./Layout";
@@ -29,6 +30,7 @@ export const MyRoutes = createBrowserRouter([
       { index: true, element: <LandingPage /> },
       { path: "login", element: <Login /> },
       { path: "adminlogin", element: <AdminLogin /> },
+      { path: "adminregister", element: <AdminRegistration /> },
     ],
   },
 

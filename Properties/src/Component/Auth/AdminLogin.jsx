@@ -71,6 +71,13 @@ export default function AdminLogin() {
                     >
                         {loading ? "Authenticating..." : "System Login"}
                     </button>
+
+                    <button
+                        onClick={() => window.location.href = "/adminregister"}
+                        className="w-full py-2 text-slate-600 hover:text-slate-800 transition"
+                    >
+                        New Admin? Register Here
+                    </button>
                 </div>
             </div>
         </div>

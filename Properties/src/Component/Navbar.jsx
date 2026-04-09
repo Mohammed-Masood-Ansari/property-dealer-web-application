@@ -1,4 +1,4 @@
-import { Building2, Home, LogOut, Menu, Phone, Star, X } from "lucide-react";
+import { Building2, Home, LogOut, Menu, Phone, Star, X, UserPlus } from "lucide-react";
 import { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 
