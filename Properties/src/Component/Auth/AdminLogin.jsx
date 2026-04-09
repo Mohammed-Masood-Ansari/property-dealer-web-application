@@ -22,6 +22,7 @@ export default function AdminLogin() {
             const res = await axios.post("http://localhost:3060/admin/login", { email, password });
 
             localStorage.setItem("accessToken", res.data.accessToken);
+            localStorage.setItem("adminToken", res.data.accessToken);
             localStorage.setItem("refreshToken", res.data.refreshToken);
             localStorage.setItem("role", res.data.role);
 

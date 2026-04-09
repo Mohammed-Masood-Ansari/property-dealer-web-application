@@ -66,15 +66,11 @@ public class SecurityConfig {
                 // ADMIN APIs
                 .requestMatchers("/admin/**", "/properties/admin/**")
                 .hasRole("ADMIN")
-                .requestMatchers(HttpMethod.POST, "/admin/upload").permitAll()
 
                 // EVERYTHING ELSE
                 .anyRequest().authenticated()
             )
             .addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class);
-        // ✅ ADD JWT FILTER
-        http.addFilterBefore(jwtFilter, 
-                org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter.class);
 
         return http.build();
     }
